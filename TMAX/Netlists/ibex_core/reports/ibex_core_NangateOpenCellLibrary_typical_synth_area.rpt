@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : area
+Design : ibex_core
+Version: U-2022.12
+Date   : Wed Feb 28 15:41:57 2024
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /eda/NanGate_45nm_OCL_v2010_12/pdk_v1.3_v2010_12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_typical.db)
+
+Number of ports:                         6944
+Number of nets:                         15085
+Number of cells:                         8964
+Number of combinational cells:           7832
+Number of sequential cells:               971
+Number of macros/black boxes:               0
+Number of buf/inv:                       1674
+Number of references:                      12
+
+Combinational area:               9124.598076
+Buf/Inv area:                      995.903999
+Noncombinational area:            6294.890073
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 15419.488148
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area           Local cell area
+                                  -------------------  ---------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-     Noncombi-  Black-
+                                  Total       Total    national   national   boxes   Design
+--------------------------------  ----------  -------  ---------  ---------  ------  --------------------------------------------------------------------------------------------------------
+ibex_core                         15419.4881    100.0    84.5880     0.0000  0.0000  ibex_core
+cs_registers_i                     5142.0461     33.3  1069.8520    26.6000  0.0000  ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_2_0_test_1
+cs_registers_i/mcycle_counter_i     773.5280      5.0   347.9280   425.6000  0.0000  ibex_counter_1_test_1
+cs_registers_i/minstret_counter_i   725.6480      4.7   300.0480   425.6000  0.0000  ibex_counter_2_test_1
+cs_registers_i/u_cpuctrlsts_part_csr    17.0240     0.1    3.7240   13.3000  0.0000  ibex_csr_8_0_0_test_1
+cs_registers_i/u_dcsr_csr            76.6080      0.5    16.7580    59.8500  0.0000  ibex_csr_32_0_40000003_test_1
+cs_registers_i/u_depc_csr           266.2660      1.7    60.1160   206.1500  0.0000  ibex_csr_32_0_0_test_0
+cs_registers_i/u_dscratch0_csr      273.9800      1.8    61.1800   212.8000  0.0000  ibex_csr_32_0_0_test_1
+cs_registers_i/u_dscratch1_csr      274.7780      1.8    61.9780   212.8000  0.0000  ibex_csr_32_0_0_test_2
+cs_registers_i/u_mcause_csr          59.5840      0.4    13.0340    46.5500  0.0000  ibex_csr_7_0_0_test_0
+cs_registers_i/u_mepc_csr           266.2660      1.7    60.1160   206.1500  0.0000  ibex_csr_32_0_0_test_3
+cs_registers_i/u_mie_csr            154.0140      1.0    34.3140   119.7000  0.0000  ibex_csr_18_0_0_test_1
+cs_registers_i/u_mscratch_csr       274.7780      1.8    61.9780   212.8000  0.0000  ibex_csr_32_0_0_test_4
+cs_registers_i/u_mstack_cause_csr    59.5840      0.4    13.0340    46.5500  0.0000  ibex_csr_7_0_0_test_1
+cs_registers_i/u_mstack_csr          25.5360      0.2     5.5860    19.9500  0.0000  ibex_csr_3_0_4_test_1
+cs_registers_i/u_mstack_epc_csr     266.2660      1.7    60.1160   206.1500  0.0000  ibex_csr_32_0_0_test_5
+cs_registers_i/u_mstatus_csr         51.0720      0.3    11.1720    39.9000  0.0000  ibex_csr_6_0_10_test_1
+cs_registers_i/u_mtval_csr          274.7780      1.8    61.9780   212.8000  0.0000  ibex_csr_32_0_0_test_6
+cs_registers_i/u_mtvec_csr          205.8840      1.3    46.2840   159.6000  0.0000  ibex_csr_32_0_00000001_test_1
+ex_block_i                         3938.3960     25.5   163.5900     0.0000  0.0000  ibex_ex_block_2_0_0_test_1
+ex_block_i/alu_i                   1036.0700      6.7  1036.0700     0.0000  0.0000  ibex_alu_1
+ex_block_i/gen_multdiv_fast_multdiv_i  2738.7360    17.8 2239.9860  498.7500 0.0000  ibex_multdiv_fast_1_test_1
+id_stage_i                         1833.8040     11.9   607.5440   458.8500  0.0000  ibex_id_stage_0_2_0_0_0_0_0_0_test_1
+id_stage_i/controller_i             438.3680      2.8   338.6180    99.7500  0.0000  ibex_controller_0_0_0_test_1
+id_stage_i/decoder_i                329.0420      2.1   329.0420     0.0000  0.0000  ibex_decoder_0_2_0_0
+if_stage_i                         3390.1700     22.0   350.3220   716.8700  0.0000  ibex_if_stage_1a110800_1a110808_0_0_0_00000020_00000016_00000040_0_0_ac533bf4_0_0_00000020_559255_test_1
+if_stage_i/compressed_decoder_i     210.9380      1.4   210.9380     0.0000  0.0000  ibex_compressed_decoder
+if_stage_i/gen_prefetch_buffer_prefetch_buffer_i  2112.0400    13.7  313.6140  406.9800 0.0000 ibex_prefetch_buffer_0_test_1
+if_stage_i/gen_prefetch_buffer_prefetch_buffer_i/fifo_i  1391.4460     9.0  576.1560  815.2900 0.0000 ibex_fetch_fifo_00000002_0_test_1
+load_store_unit_i                   960.5260      6.2   514.9760   445.5500  0.0000  ibex_load_store_unit_0_00000020_test_1
+wb_stage_i                           69.9580      0.5    69.9580     0.0000  0.0000  ibex_wb_stage_0_0_0
+--------------------------------  ----------  -------  ---------  ---------  ------  --------------------------------------------------------------------------------------------------------
+Total                                                  9124.5981  6294.8901  0.0000
+
+1

@@ -1,0 +1,10 @@
+ Warning: Feature "pattern type" requires single-process/multi-core fault simulation. (M729)
+ ------------------------------------------------------------------------------
+ Begin sequential fault simulation of 62628 faults on 1314 internal patterns.
+ -----------------------------------------------------------
+ #faults    pass #faults   cum. #faults     test    process
+ simulated  detect/total   detect/active  coverage  CPU time
+ ---------  -------------  -------------  --------  --------
+ 1664           97   1664      97  62531    13.83%     11.89
+ 3424           95   1760     192  62436    13.96%     20.29
+ Error: Fault simulation aborted: #faults_simulated=3424, test_coverage=13.96%, CPU time=20.29 (M127)
