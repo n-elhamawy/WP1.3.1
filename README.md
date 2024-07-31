@@ -14,11 +14,15 @@ Make sure to download this repository in the same directory as the ibex core. Th
 ### Logic Simulation
 To compile the design and start simulation, run the ``make sim`` command.
 ### Pattern Extraction
+The VCDE and VCD patterns need to be transferred to Standard Test Interface Language(STIL) format, in order to be able to load/unload the scan chains. 
+`` make stil `` is the command to translate from one VCD(E) to STIL. __Note the *DEMO* variablle needs to be set. The design needs to have scan chains.__  
 ### Synthesis
-### ATPG
-To start the ATPG, run the command ``make atpg``.
+Two options to perform the synthesis. `` make ibex_synth`` to synthesize the design without scan chains. To synthesize with scan chains use ``make ibex_synth_dft``.
+### Test Protocol
+The fault simulation and ATPG need a test protocol to be defined. The command `` make spf`` outputs a test protocol in STIL format that is used in the next steps.
+To start the ATPG, run the command ``make atpg``.__Note: For design with scan chains__
 ### Fault Simulation
-To start the fault simulation for the 'hello_test' pattern set and the stuck-at fault model, run the command ``make slt``.
+To start the fault simulation for the 'hello_test' pattern set and the stuck-at fault model, run the command ``make slt``. __Note: The design needs to have scan chains.__
 ### Variables
 The test objects can change and therefore there are different variables for different things to be tested.
 - *TOP_MODULE*: is the module under test
