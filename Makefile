@@ -59,10 +59,10 @@ stil:
 	@echo $(SCAN_CHAIN_FILE)
 	python3 scripts/python_scripts/translatePatterns.py $(TOP_MODULE) $(DEMO) $(SPF_FILE) $(VCDE_FILE) $(VCD_SCAN_FILE) $(SCAN_CHAIN_FILE)
 	
-ibex_core: syn_scripts/dc_setup.tcl 
+ibex_synth: syn_scripts/dc_setup.tcl 
 	@export $(EXPORT_LIST); dc_shell -f scripts/syn_scripts/ibex_synth.tcl -output synthesis_batch.log
 
-ibex_core_dft: syn_scripts/dc_setup.tcl 
+ibex_synth_dft: syn_scripts/dc_setup.tcl 
 	@export $(EXPORT_LIST); dc_shell -f scripts/syn_scripts/ibex_synth_dft.tcl -output synthesis_batch.log
 	
 atpg:
